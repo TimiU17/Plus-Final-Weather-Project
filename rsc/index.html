@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/abadadd01a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row1">
+            <a href="#" class="location"><i class="fas fa-map-marker-alt"></i></a>
+            <form id="search_form">
+                <input type="text" placeholder="Search..." class="search_button">
+                <button type="submit" class="main_search">Check</button>
+            </form>
+        </div>
+
+        <div class="row2">
+            <div class="left">
+                <div class="city">Your city</div>
+                <div class="date"></div>
+                <div class="temp-wrapper">
+                    <div class="temperature">-5</div>
+                    <span id="units">
+                        <a href="#" id="celsius-link" class="active">°C</a> /
+                        <a href="#" id="fahrenheit-link">°F</a>
+                    </span>
+                </div>
+            </div>
+            <div class="right">
+                <div id="humidity">Humidity:</div>
+                <div id="wind">Wind:</div>
+                <div id="description">State:</div><img src="https://openweathermap.org/img/wn/03d@2x.png" alt="Clear"
+                    class="icon" />
+                <div id="real_feel">Feels like:</div>
+            </div>
+        </div>
+
+        <div class="row3">
+            <div class="col">Tue</br><span class="degrees" celsius="-10">-10 °C</span></div>
+            <div class="col">Wed</br><span class="degrees" celsius="-8">-8 °C</span></div>
+            <div class="col">Thu</br><span class="degrees" celsius="-8">-8 °C</span></div>
+            <div class="col">Fri</br><span class="degrees" celsius="-11">-11 °C</span></div>
+            <div class="col">Sat</br><span class="degrees" celsius="-13">-13 °C</span></div>
+        </div>
+
+        <div class="row4">
+            <p class="quote"> Checking the weather to find an excuse for being lazy?</p>
+
+        </div>
+    </div>
+    <p class="footer">Open source on <a href="https://github.com/TimiU17/She-Codes-Plus-Project"
+            target="_blank">GitHub</a>
+    </p>
+    <script src="script.js"></script>
+</body>
+
+</html>

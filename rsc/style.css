@@ -1,0 +1,182 @@
+body {
+  margin: 0;
+}
+
+form {
+  display: inline;
+  padding: 10px;
+}
+
+.container {
+  margin-top: 10px;
+  margin-left: 60px;
+  display: grid;
+  background: url("default.png");
+  background-repeat: no-repeat;
+  background-size: 550px 450px;
+  background-position: center;
+  width: 550px;
+  border: 1.5px solid #0e5265;
+  max-width: 600px;
+
+  border-radius: 20px;
+}
+.container .row1 {
+  display: flex;
+  margin: 10px auto;
+}
+.row1 .link {
+  display: inline;
+  padding: 10px;
+}
+.fa-map-marker-alt {
+  color: #f85f44;
+  font-size: 25px;
+  margin-top: 10px;
+}
+.fa-map-marker-alt:visited {
+  color: #f85f44;
+}
+
+.search_button {
+  height: 20px;
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: rgb(195, 221, 255);
+  align-items: center;
+  border: 1px solid #0e5265;
+}
+
+.main_search {
+  color: #0e5265;
+  background-color: #f85f44;
+  display: inline;
+  height: 23px;
+  width: 58px;
+  margin-left: 10px;
+  border-radius: 7px;
+  border-width: 1px;
+  border-color: rgb(195, 221, 255);
+  font-family: "Kalam", cursive;
+  border: 1px solid #0e5265;
+}
+
+.main_search:hover {
+  color: #f85f44;
+  background-color: #fbffe2;
+  cursor: pointer;
+  opacity: 90%;
+  transition: all 200ms ease-in-out;
+}
+
+.container .row2 {
+  display: flex;
+  align-items: center;
+  font-family: "Kalam", cursive;
+  color: #0e5265;
+  font-size: 20px;
+  margin-left: 60px;
+}
+
+.container .row2 .left {
+  text-align: center;
+  padding: 8px 12px;
+}
+
+.container .row2 .right {
+  text-align: center;
+  padding: 8px 20px 9px 130px;
+  display: block;
+  align-items: center;
+}
+
+.container .row2 .left .city {
+  text-align: center;
+}
+
+.container .row2 .left .temperature .dot {
+  border: 3px solid #f85f44;
+  border-radius: 50%;
+  padding: 6px;
+}
+
+.row3 {
+  display: grid;
+  width: 350px;
+  grid-template-columns: 70px 70px 70px 70px 70px;
+  margin-left: 110px;
+  margin-bottom: 1px;
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: "Kalam", cursive;
+  color: #0e5265;
+}
+
+.row4 {
+  font-family: "Kalam", cursive;
+  font-size: 21px;
+  color: #105806;
+  text-align: center;
+  position: relative;
+  margin-right: 15px;
+}
+.row4 .p {
+  margin-top: 1px;
+}
+.temperature {
+  color: #f85f44;
+  display: inline;
+  font-size: 28px;
+}
+
+#celsius-link {
+  color: #f85f44;
+}
+
+#celsius-link:visited {
+  color: #f85f44;
+  text-decoration: wavy;
+}
+
+#celsius-link:hover {
+  transform: scale(2);
+}
+
+#fahrenheit-link {
+  color: #f85f44;
+}
+
+#fahrenheit-link:visited {
+  color: #f85f44;
+  text-decoration: none;
+}
+
+#units {
+  position: relative;
+  top: -12px;
+  font-size: 14px;
+}
+p.footer {
+  font-size: 7px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 300px;
+  margin-top: 2px;
+}
+
+.temp-wrapper {
+  border: 1.1px solid #0e5265;
+  border-radius: 50%;
+  padding: 9px 10px 1px 1px;
+}
+
+#description {
+  display: inline;
+}
+.icon {
+  display: inline;
+
+  margin-bottom: -12px;
+  height: 40px;
+  width: 48px;
+}
