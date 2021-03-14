@@ -157,13 +157,13 @@ function displayWeatherCondition(response) {
 
   let backgroundDiv = document.querySelector(".container");
   if (response.data.main.temp > 15) {
-    backgroundDiv.style.backgroundImage = 'url("summer.png")';
+    backgroundDiv.style.backgroundImage = 'url("rsc/summer.png")';
     document.querySelector(".quote").innerHTML = `This is just like winter,<br> except it's about 30 degrees warmer.`;
-  } else if (response.data.main.temp > 0) {
-    backgroundDiv.style.backgroundImage = 'url("default.png")';
+  } else if (response.data.main.temp > 1) {
+    backgroundDiv.style.backgroundImage = 'url("rsc/default.png")';
     document.querySelector(".quote").innerHTML = `Beginning to smell a lot like spring.<br>Time to welcome the mosquitoes`;
   } else {
-    backgroundDiv.style.backgroundImage = 'url("winter.png")';
+    backgroundDiv.style.backgroundImage = 'url("rsc/winter.png")';
     document.querySelector(".quote").innerHTML = `This looks like a good week</br>to stay inside and be a potato.`;
   }
 
